@@ -8,3 +8,4 @@ torchvision
 pytorch_wavelets
 tqdm
 torchmetrics
+blobfile
