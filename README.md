@@ -131,3 +131,7 @@ bash run.sh
 ```
 
 while in the folder WDM3D.
+
+## Acknowledgements
+
+Thanks to Phung et al. (https://github.com/VinAIResearch/WaveDiff/tree/main) and Friedrich et al. (https://github.com/pfriedri/wdm-3d) for releasing their code for WDDGAN and WDM3D, respectively.
