@@ -1,0 +1,10 @@
+torch
+nibabel
+tensorboard
+torchinfo 
+einops
+scikit-image
+torchvision
+pytorch_wavelets
+tqdm
+torchmetrics
