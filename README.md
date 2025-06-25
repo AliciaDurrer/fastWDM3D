@@ -1,6 +1,6 @@
-# Fast and Accurate 3D Healthy Tissue Inpainting
+# fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting
 
-This repository provides the code to the paper "Fast and Accurate 3D Healthy Tissue Inpainting".
+This repository provides the code to the paper "fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting".
 
 ## Setup
 
@@ -94,7 +94,7 @@ bash run.sh
 
 while in the folder GO3D.
 
-## WDM3D
+## fastWDM3D
 ### Training
 
 In the file WDM3D/run.sh, set the GPU to the ID of the GPU you want to use. Set MODE='train' and DATA_MODE='train' and adapt the arguments as you wish. Particularly important:
