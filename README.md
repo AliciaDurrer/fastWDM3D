@@ -8,14 +8,11 @@ This repository provides the code to the paper ["fastWDM3D: Fast and Accurate 3D
 
 If you use our work, please **cite** our paper (and consider to star this repository 😃):
 ```bibtex
-@misc{durrer2025fastwdm3dfastaccurate3d,
-      title={fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting}, 
-      author={Alicia Durrer and Florentin Bieder and Paul Friedrich and Bjoern Menze and Philippe C. Cattin and Florian Kofler},
-      year={2025},
-      eprint={2507.13146},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV},
-      url={https://arxiv.org/abs/2507.13146}, 
+@article{durrer2025fastwdm3d,
+  title={fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting},
+  author={Durrer, Alicia and Bieder, Florentin and Friedrich, Paul and Menze, Bjoern and Cattin, Philippe C and Kofler, Florian},
+  journal={arXiv preprint arXiv:2507.13146},
+  year={2025}
 }
 ```
 
