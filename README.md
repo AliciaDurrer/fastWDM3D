@@ -1,18 +1,20 @@
 # fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting
 
-This repository provides the code to the paper ["fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting"](https://arxiv.org/abs/2507.13146) 🧠🖌️which is accepted and will be presented at the DGM4MICCAI workshop at MICCAI 2025.
+This repository provides the code to the paper ["*fastWDM3D*: Fast and Accurate 3D Healthy Tissue Inpainting"](https://link.springer.com/chapter/10.1007/978-3-032-05472-2_17) 🧠🖌️, which was presented at the DGM4MICCAI workshop at MICCAI 2025 and published as part of the workshop proceedings.
 
-**Paper Abstract**: Healthy tissue inpainting has significant applications, including the generation of pseudo-healthy baselines for tumor growth models and the facilitation of image registration. In previous editions of the BraTS Local Synthesis of Healthy Brain Tissue via Inpainting Challenge, denoising diffusion probabilistic models (DDPMs) demonstrated qualitatively convincing results but suffered from low sampling speed. To mitigate this limitation, we adapted a 2D image generation approach, combining DDPMs with generative adversarial networks (GANs) and employing a variance-preserving noise schedule, for the task of 3D inpainting. Our experiments showed that the variance-preserving noise schedule and the selected reconstruction losses can be effectively utilized for high-quality 3D inpainting in a few time steps without requiring adversarial training. We applied our findings to a different architecture, a 3D wavelet diffusion model (WDM3D) that does not include a GAN component. The resulting model, denoted as fastWDM3D, obtained a SSIM of 0.8571, a MSE of 0.0079, and a PSNR of 22.26 on the BraTS inpainting test set. Remarkably, it achieved these scores using only two time steps, completing the 3D inpainting process in 1.81 s per image. When compared to other DDPMs used for healthy brain tissue inpainting, our model is up to 800 x faster while still achieving superior performance metrics. Our proposed method, fastWDM3D, represents a promising approach for fast and accurate healthy tissue inpainting.
+**Paper Abstract**: Healthy tissue inpainting has many applications, for instance, generating pseudo-healthy baselines for tumor growth models or simplifying image registration. In prior editions of the *BraTS Local Synthesis of Healthy Brain Tissue via Inpainting Challenge*, denoising diffusion probabilistic models (DDPMs) demonstrated qualitatively convincing results but suffered from low sampling speed. To mitigate this limitation, we present a modified 3D wavelet diffusion model (*WDM3D*), denoted as *fastWDM3D*. Our proposed model employs a variance-preserving noise schedule and reconstruction losses over the full image as well as over the masked area only. Using *fastWDM3D* with only two time steps we achieved a SSIM of 0.8571, a MSE of 0.0079, and a PSNR of 22.26 on the *BraTS* inpainting test set. The 3D inpainting process took only 1.81 s per image. Compared to other DDPMs used for healthy brain tissue inpainting, our model is up to ~800 times faster but still achieves superior performance metrics. Our proposed method, *fastWDM3D*, represents a promising approach for fast and accurate healthy tissue inpainting.
 
 ***
 
 If you use our work, please **cite** our paper (and consider to star this repository 😃):
 ```bibtex
-@article{durrer2025fastwdm3d,
+@inproceedings{durrer2025fastwdm3d,
   title={fastWDM3D: Fast and Accurate 3D Healthy Tissue Inpainting},
   author={Durrer, Alicia and Bieder, Florentin and Friedrich, Paul and Menze, Bjoern and Cattin, Philippe C and Kofler, Florian},
-  journal={arXiv preprint arXiv:2507.13146},
-  year={2025}
+  booktitle={MICCAI Workshop on Deep Generative Models},
+  pages={171--181},
+  year={2025},
+  organization={Springer}
 }
 ```
 
@@ -125,6 +127,9 @@ bash run.sh
 
 while in the folder WDM3D.
 
+### Pretrained Model
+
+The weights of our best performing model, the *fastWDM3D* trained with T=2 for 120000 iterations, are released on [HuggingFace](https://huggingface.co/AliciaDurrer/fastWDM3D). For more implementation details please have a look at the paper.
 
 ### Sampling
 
